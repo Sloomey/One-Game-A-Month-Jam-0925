@@ -1,0 +1,199 @@
+fileFormatVersion: 2
+guid: 4f247f9e20fe65d47ab7368d051bf222
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Arm_Calf
+    100002: Calf_5
+    100004: Ear.L
+    100006: Ear.R
+    100008: eye.L
+    100010: eye.R
+    100012: head
+    100014: Help_knee.L
+    100016: Help_knee.R
+    100018: hip_1_f.L
+    100020: hip_1_f.R
+    100022: hip_2_f.L
+    100024: hip_2_f.R
+    100026: hip_b.L
+    100028: hip_b.R
+    100030: hoof_b.L
+    100032: hoof_b.R
+    100034: hoof_b_Helper.L
+    100036: hoof_b_Helper.R
+    100038: hoof_f.L
+    100040: hoof_f.R
+    100042: hoof_f_Helper.L
+    100044: hoof_f_Helper.R
+    100046: //RootNode
+    100048: mouth
+    100050: neck_01
+    100052: neck_02
+    100054: root_bone
+    100056: shin_b.L
+    100058: shin_b.R
+    100060: shin_f.L
+    100062: shin_f.R
+    100064: Spine_02
+    100066: Spine_03
+    100068: Spine_04
+    100070: Spine_05
+    100072: Spine_base
+    100074: tail_1
+    100076: tail_2
+    100078: tail_3
+    100080: tail_4
+    100082: tail_5
+    100084: thigh_b.L
+    100086: thigh_b.R
+    100088: thigh_f.L
+    100090: thigh_f.R
+    400000: Arm_Calf
+    400002: Calf_5
+    400004: Ear.L
+    400006: Ear.R
+    400008: eye.L
+    400010: eye.R
+    400012: head
+    400014: Help_knee.L
+    400016: Help_knee.R
+    400018: hip_1_f.L
+    400020: hip_1_f.R
+    400022: hip_2_f.L
+    400024: hip_2_f.R
+    400026: hip_b.L
+    400028: hip_b.R
+    400030: hoof_b.L
+    400032: hoof_b.R
+    400034: hoof_b_Helper.L
+    400036: hoof_b_Helper.R
+    400038: hoof_f.L
+    400040: hoof_f.R
+    400042: hoof_f_Helper.L
+    400044: hoof_f_Helper.R
+    400046: //RootNode
+    400048: mouth
+    400050: neck_01
+    400052: neck_02
+    400054: root_bone
+    400056: shin_b.L
+    400058: shin_b.R
+    400060: shin_f.L
+    400062: shin_f.R
+    400064: Spine_02
+    400066: Spine_03
+    400068: Spine_04
+    400070: Spine_05
+    400072: Spine_base
+    400074: tail_1
+    400076: tail_2
+    400078: tail_3
+    400080: tail_4
+    400082: tail_5
+    400084: thigh_b.L
+    400086: thigh_b.R
+    400088: thigh_f.L
+    400090: thigh_f.R
+    2100000: Calf
+    4300000: Calf_5
+    9500000: //RootNode
+    13700000: Calf_5
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Calf
+    second: {fileID: 2100000, guid: bd7ee37a8a5760349bd37d9d435799f2, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
+    weldVertices: 0
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root_bone
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 182501
+  packageName: LowPoly Cows pack
+  packageVersion: 1.0
+  assetPath: Assets/PolyArt/Animals/PolyArt_Farm_Animals/Cows/FBX/Calf/LowPoly_Calf_5.fbx
+  uploadId: 399417

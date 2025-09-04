@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: 03e6082d3d0b2ec49910b17086a9186f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Arm_Cow
+    100002: Bull_1
+    100004: Bull_10
+    100006: Bull_11
+    100008: Bull_12
+    100010: Bull_2
+    100012: Bull_3
+    100014: Bull_4
+    100016: Bull_5
+    100018: Bull_6
+    100020: Bull_7
+    100022: Bull_8
+    100024: Bull_9
+    100026: Ear.L
+    100028: Ear.R
+    100030: eye.L
+    100032: eye.R
+    100034: head
+    100036: Help_knee.L
+    100038: Help_knee.R
+    100040: hip_1_f.L
+    100042: hip_1_f.R
+    100044: hip_2_f.L
+    100046: hip_2_f.R
+    100048: hip_b.L
+    100050: hip_b.R
+    100052: hoof_b.L
+    100054: hoof_b.R
+    100056: hoof_b_Helper.L
+    100058: hoof_b_Helper.R
+    100060: hoof_f.L
+    100062: hoof_f.R
+    100064: hoof_f_Helper.L
+    100066: hoof_f_Helper.R
+    100068: //RootNode
+    100070: mouth
+    100072: neck_01
+    100074: neck_02
+    100076: root_bone
+    100078: shin_b.L
+    100080: shin_b.R
+    100082: shin_f.L
+    100084: shin_f.R
+    100086: Spine_02
+    100088: Spine_03
+    100090: Spine_04
+    100092: Spine_05
+    100094: Spine_base
+    100096: tail_1
+    100098: tail_2
+    100100: tail_3
+    100102: tail_4
+    100104: tail_5
+    100106: thigh_b.L
+    100108: thigh_b.R
+    100110: thigh_f.L
+    100112: thigh_f.R
+    400000: Arm_Cow
+    400002: Bull_1
+    400004: Bull_10
+    400006: Bull_11
+    400008: Bull_12
+    400010: Bull_2
+    400012: Bull_3
+    400014: Bull_4
+    400016: Bull_5
+    400018: Bull_6
+    400020: Bull_7
+    400022: Bull_8
+    400024: Bull_9
+    400026: Ear.L
+    400028: Ear.R
+    400030: eye.L
+    400032: eye.R
+    400034: head
+    400036: Help_knee.L
+    400038: Help_knee.R
+    400040: hip_1_f.L
+    400042: hip_1_f.R
+    400044: hip_2_f.L
+    400046: hip_2_f.R
+    400048: hip_b.L
+    400050: hip_b.R
+    400052: hoof_b.L
+    400054: hoof_b.R
+    400056: hoof_b_Helper.L
+    400058: hoof_b_Helper.R
+    400060: hoof_f.L
+    400062: hoof_f.R
+    400064: hoof_f_Helper.L
+    400066: hoof_f_Helper.R
+    400068: //RootNode
+    400070: mouth
+    400072: neck_01
+    400074: neck_02
+    400076: root_bone
+    400078: shin_b.L
+    400080: shin_b.R
+    400082: shin_f.L
+    400084: shin_f.R
+    400086: Spine_02
+    400088: Spine_03
+    400090: Spine_04
+    400092: Spine_05
+    400094: Spine_base
+    400096: tail_1
+    400098: tail_2
+    400100: tail_3
+    400102: tail_4
+    400104: tail_5
+    400106: thigh_b.L
+    400108: thigh_b.R
+    400110: thigh_f.L
+    400112: thigh_f.R
+    2100000: Bull
+    4300000: Bull_12
+    4300002: Bull_11
+    4300004: Bull_10
+    4300006: Bull_9
+    4300008: Bull_8
+    4300010: Bull_7
+    4300012: Bull_6
+    4300014: Bull_5
+    4300016: Bull_4
+    4300018: Bull_3
+    4300020: Bull_2
+    4300022: Bull_1
+    9500000: //RootNode
+    13700000: Bull_1
+    13700002: Bull_10
+    13700004: Bull_11
+    13700006: Bull_12
+    13700008: Bull_2
+    13700010: Bull_3
+    13700012: Bull_4
+    13700014: Bull_5
+    13700016: Bull_6
+    13700018: Bull_7
+    13700020: Bull_8
+    13700022: Bull_9
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bull
+    second: {fileID: 2100000, guid: bd7ee37a8a5760349bd37d9d435799f2, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
+    weldVertices: 0
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root_bone
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 182501
+  packageName: LowPoly Cows pack
+  packageVersion: 1.0
+  assetPath: Assets/PolyArt/Animals/PolyArt_Farm_Animals/Cows/FBX/Bull/LowPoly_Bull_All.fbx
+  uploadId: 399417
