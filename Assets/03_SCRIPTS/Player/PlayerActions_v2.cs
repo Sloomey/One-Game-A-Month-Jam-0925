@@ -53,7 +53,6 @@ public class PlayerActions_v2 : MonoBehaviour
     private void Awake()
     {
         playerControls = new PlayerControls();
-        Debug.Log("AWAKEFUNC");
     }
 
     private void Start()
@@ -67,76 +66,17 @@ public class PlayerActions_v2 : MonoBehaviour
 
     private void Update()
     {
-        //Reticle.GetComponent<Image>().sprite = defaultCursor;
-        //Reticle.color = new Color32(255,255,255,175);
-        
         // Interaction Mechanic
         /*Ray ray = cam.ScreenPointToRay(playerControls.Player.MousePosition.ReadValue<Vector2>());
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 3)){
-
+        if (Physics.Raycast(ray, out hit, 3))
+        {
             Interactable interactable = hit.collider.GetComponent<Interactable>();
-            if (interactable != null){
-
-                // Change Reticle color
-                if (viewingObject){
-                    Reticle.GetComponent<Image>().sprite = emptyCursor;
-                    //Reticle.color = new Color32(255,255,255,175);
-                } else {
-                    Reticle.GetComponent<Image>().sprite = grabCursor;
-                    //Reticle.GetComponent<Image>().sprite = grabCursor;
-                    Reticle.color = new Color32(255,255,255,175);
-                }
-
-                // Hover door text
-                Door _door = interactable as Door;
-                if (_door != null){
-                    if (gameManager.ItemHint2){
-                        gameManager.ItemSellHint = false;
-                        gameManager.ItemDropHint = false;
-                    }
-                    itemHint_Drop.SetActive(false);
-                    itemHint_Sell.SetActive(false);
-                    HoverDoor(_door);
-                }
-                
-                // Attempting to Interact
-                if (playerControls.Player.Interact.triggered && !viewingObject){
-                    
-                    Debug.Log("hit interactable item: " + interactable);
-                    interactable.Interact();
-                    
-                    soundsManager.Play("invOpen");
-                    player_steps_stone_source.Stop();
-
-                    // Check if grabbing Key
-                    if (interactable.gameObject.name == "Key"){
-                        gameManager.ShowKeyUI();
-                        gameManager.GetComponent<ItemManager>().pickUpItem(interactable.gameObject.name);
-                        interactable.gameObject.SetActive(false);
-                    }
-
-                    // Check if the object we're interacting with is Item (vs door or etc)
-                    Item _item = interactable as Item;
-                    if (_item != null){
-                        if (gameManager.ItemHint1) gameManager.ItemHint1 = false;
-                        if (gameManager.ItemHint2){
-                            gameManager.ItemSellHint = true;
-                            gameManager.ItemDropHint = true;
-                            //gameManager.ItemHint2 = false;
-                        }
-                        itemHint_Drop.SetActive(true);
-                        itemHint_Sell.SetActive(true);
-
-                        SetFocus(_item);
-                    }
-
-                    if (_door != null){
-                        SelectDoor(_door);
-                    }
-                }
-            } 
+            if (interactable != null)
+            {
+            //code here
+            }
         }*/
     }
     
@@ -203,101 +143,7 @@ public class PlayerActions_v2 : MonoBehaviour
                 player_steps_stone_source.Stop();
             }
         }
-        /*else
-        {
-            // Player Controls when Viewing Object
-            Item _item = currentFocus as Item;
-
-            if (_item != null){
-                // Place item back
-                if (playerControls.Player.PlaceItem.ReadValue<float>() == 1){
-                    viewingObject = false;
-                    Item3DViewer viewer = GetComponent<Item3DViewer>();
-                    viewer.StopDisplaying();
-                    
-                    // Return origonal object
-                    //currentFocus.GetComponent<MeshRenderer>().enabled = true;
-                    EnableMeshRecursive(currentFocus.transform);
-                    currentFocus = null;
-
-                    if (gameManager.ItemSellHint && gameManager.ItemDropHint){
-                        gameManager.ItemSellHint = false;
-                        gameManager.ItemDropHint = false;
-                    }
-                    
-                    soundsManager.Play("invClose");
-                }
-
-                // Sell item
-                if (playerControls.Player.SellItem.ReadValue<float>() == 1){
-                    
-                    // Increase money
-                    soundsManager.Play("sell");
-                    
-                    gameManager.money += _item.sellPrice;
-                    gameManager.UpdateMoneyUI();
-                    gameManager.GetComponent<ItemManager>().pickUpItem(_item.gameObject.name);
-                    Debug.Log(_item + " + " + _item.gameObject + " + " + _item.gameObject.name);
-
-                    Debug.Log("Selling item for: " + _item.sellPrice);
-                    Debug.Log("new total money should be: " + gameManager.money);
-                    
-                    viewingObject = false;
-                    Item3DViewer viewer = GetComponent<Item3DViewer>();
-                    viewer.StopDisplaying();
-
-                    // Destroy origonal object (dont actually destroy, just set to inactive)
-                    // - we need to keep track of these for itemmanager
-                    if (gameManager.ItemSellHint && gameManager.ItemDropHint){
-                        gameManager.ItemSellHint = false;
-                        gameManager.ItemDropHint = false;
-                    }
-
-                    // Destroy(currentFocus.gameObject);
-                    currentFocus.gameObject.SetActive(false);
-                    currentFocus = null;
-                }
-            }*/
-
-            // Player Controls when Viewing Door UI
-            /*Door _door = currentFocus as Door;
-            if (_door != null){
-                
-                // CHECK IF WE HAVE ENOUGH MONEY, ELSE THROW UI ERROR
-                
-                // Enter Door Scene
-                if (playerControls.Player.EnterDoor.ReadValue<float>() == 1){
-                    viewingObject = false;
-                    currentFocus = null;
-
-                    _door.LoadContainerScene();
-                }
-
-                // Exit Door Focus
-                if (playerControls.Player.ExitDoor.ReadValue<float>() == 1){
-                    viewingObject = false;
-                    currentFocus = null;
-                    
-                    // Turn off UI
-                }
-            }
-        }*/
     }
-
-    /*
-    private void EnableMeshRecursive(Transform parent)
-    {
-        MeshRenderer meshRenderer = parent.GetComponent<MeshRenderer>();
-        if (meshRenderer != null)
-        {
-            meshRenderer.enabled = true;
-        }
-
-        for (int i = 0; i < parent.childCount; i++)
-        {
-            EnableMeshRecursive(parent.GetChild(i));
-        }
-    }*/
     
     private void Look()
     {
@@ -315,78 +161,6 @@ public class PlayerActions_v2 : MonoBehaviour
             }
         }
     }
-    
-    /*
-    private void SetFocus(Interactable newFocus)
-    {
-        viewingObject = true;
-        currentFocus = newFocus;
-        Item3DViewer viewer = GetComponent<Item3DViewer>();
-        viewer.Display(newFocus as Item);
-
-        Item _item = newFocus as Item;
-        DoorUICanvas.enabled = true;
-        DoorUICanvas.GetComponent<DoorUIViewer>().updateNameText(_item.name);
-        DoorUICanvas.GetComponent<DoorUIViewer>().updateDescText(_item.description);
-        DoorUICanvas.GetComponent<DoorUIViewer>().updatePriceText("Value: $" + _item.sellPrice.ToString());
-    }
-    
-
-    private void DropFocus(Interactable newFocus){
-        currentFocus = null;
-    }
-
-    private void HoverDoor(Door newDoor)
-    {
-        Reticle.GetComponent<Image>().sprite = doorCursor;
-        Reticle.color = new Color32(255,255,255,215);
-        DoorUICanvas.enabled = true;
-        DoorUICanvas.GetComponent<DoorUIViewer>().updateNameText(newDoor.containerName);
-        DoorUICanvas.GetComponent<DoorUIViewer>().updateDescText(newDoor.containerDescription);
-
-        // Check if we've opened door before, and if not show price
-        if (gameManager.openedDoors.Contains(newDoor.containerName)){
-            DoorUICanvas.GetComponent<DoorUIViewer>().updatePriceText("OWNED");
-            newDoor.containerPrice = 0;
-            newDoor.containerDescription = "Status: Unlocked";
-        } else {
-            DoorUICanvas.GetComponent<DoorUIViewer>().updatePriceText("Bid Required: $" + newDoor.containerPrice.ToString());
-        }
-
-        // Make special case for container 8 that shows Locked instead of price based
-        if (newDoor.containerName == "Container 08"){
-            DoorUICanvas.GetComponent<DoorUIViewer>().updatePriceText("LOCKED");
-        }
-        
-        if (newDoor.isExit){
-            DoorUICanvas.GetComponent<DoorUIViewer>().updatePriceText("");
-        }
-    }
-
-    private void SelectDoor(Door newDoor)
-    {
-        // Make special case for container 8 - need key insetad of money
-        if (newDoor.containerName == "Container 08" && gameManager.haskey){
-            gameManager.HideKeyUI();
-            newDoor.LoadContainerScene();
-        }
-        
-        // Enter Door
-        if (gameManager.money < newDoor.containerPrice){
-            // Throw some kind of error or something
-            Debug.Log("insufficient funds");
-        } else {
-            
-            gameManager.money -= newDoor.containerPrice;
-            gameManager.UpdateMoneyUI();
-            newDoor.hasOpened = true;
-            if (!gameManager.openedDoors.Contains(newDoor.containerName) && !newDoor.isExit){
-                gameManager.addDoorToOpenList(newDoor.containerName);
-            } 
-            newDoor.LoadContainerScene();
-        }
-    }
-    */
     
     private void OnEnable()
     {
