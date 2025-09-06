@@ -53,6 +53,7 @@ public class PlayerActions_v2 : MonoBehaviour
     private void Awake()
     {
         playerControls = new PlayerControls();
+        Debug.Log("AWAKEFUNC");
     }
 
     private void Start()
