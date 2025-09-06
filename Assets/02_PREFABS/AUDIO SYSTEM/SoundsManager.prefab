@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1493061017654319524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2213814919908413265}
+  - component: {fileID: 7831473829779113532}
+  - component: {fileID: 6757868085855546007}
+  m_Layer: 0
+  m_Name: SoundsManager
+  m_TagString: SoundsManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2213814919908413265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493061017654319524}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.390127, y: 8.08671, z: -40.68416}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7831473829779113532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493061017654319524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b05711217d9b5e84a9ac66d6a5c020db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
+  sfxAudioMixer: {fileID: -4146135522460694784, guid: d645cfdf6e5b6f249a44fe0e9253f325, type: 2}
+--- !u!114 &6757868085855546007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493061017654319524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31d14e46cac35ec4ca62474a10f2cc73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: click
+    clip: {fileID: 8300000, guid: 60aca33b4e6467c4985608604cbe5544, type: 3}
+    volume: 0.462
+    pitch: 1
+    source: {fileID: 0}
+  - name: pause
+    clip: {fileID: 8300000, guid: dd135ca8cc1a05b439d1be496b3feef1, type: 3}
+    volume: 0.462
+    pitch: 1
+    source: {fileID: 0}
+  - name: resume
+    clip: {fileID: 8300000, guid: 29a2a1fa151a538469caebaedd6c07a5, type: 3}
+    volume: 0.462
+    pitch: 1
+    source: {fileID: 0}
+  - name: pageback
+    clip: {fileID: 8300000, guid: 1621d4bb67cb30f4995599f7e61001c6, type: 3}
+    volume: 0.462
+    pitch: 1
+    source: {fileID: 0}
+  - name: pagenext
+    clip: {fileID: 8300000, guid: 924fcc6cc4bd0dd4f8050ae40716aaa5, type: 3}
+    volume: 0.462
+    pitch: 1
+    source: {fileID: 0}
+  sfxAudioMixer: {fileID: -4146135522460694784, guid: d645cfdf6e5b6f249a44fe0e9253f325, type: 2}
+  ignorePause: 1
