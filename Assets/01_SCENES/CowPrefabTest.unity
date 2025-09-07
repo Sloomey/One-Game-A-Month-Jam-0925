@@ -216,7 +216,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c543077f33e243345ab3a91b30b0dd4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseData: {fileID: 11400000, guid: ab5cfa4314ddf9b4e9d8e0b30df570ca, type: 2}
+  cowName: Test
+  size: 3
 --- !u!1 &805320500
 GameObject:
   m_ObjectHideFlags: 0
