@@ -131,6 +131,8 @@ GameObject:
   - component: {fileID: 221830055}
   - component: {fileID: 221830056}
   - component: {fileID: 221830057}
+  - component: {fileID: 221830058}
+  - component: {fileID: 221830059}
   m_Layer: 0
   m_Name: Cow
   m_TagString: Untagged
@@ -149,7 +151,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: -5.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2084071126}
   m_Father: {fileID: 0}
@@ -217,7 +219,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cowName: Test
-  size: 3
+  cowGender: 0
+  widthModifier: 1
+  heightModifier: 1
+  lengthModifier: 1
+  speedModifier: 1
+  maintenanceLevel: 0.51
+  value: 100
+--- !u!114 &221830058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221830053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7535adee1b1947140956a780bfd2aa14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modifierScale: 1
+--- !u!114 &221830059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221830053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2708f089e566e4b4aba47141f5d913c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &805320500
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +629,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 316a392f498ebdf428636db2d84ffdfd, type: 2}
+    - target: {fileID: 808243201967792661, guid: d925f2228e3ffcd4abd620e43d39328f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 808243201973071739, guid: d925f2228e3ffcd4abd620e43d39328f, type: 3}
       propertyPath: m_Name
       value: Model
