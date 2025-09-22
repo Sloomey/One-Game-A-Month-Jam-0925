@@ -16,8 +16,6 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public AudioMixer audioMixer;
     public GameObject bgImage_black;
-    public GameObject bgImage_paused;
-    public GameObject bgImage_options;
     public GameObject pauseMenu;
     public GameObject optionsMenu;
     public GameObject mainMenuConfirm;
@@ -52,8 +50,6 @@ public class PauseMenu : MonoBehaviour
     {
         SoundsManager_UI.instance.Play("resume");
         bgImage_black.SetActive(false);
-        bgImage_paused.SetActive(false);
-        bgImage_options.SetActive(false);
         pauseMenu.SetActive(false);
         optionsMenu.SetActive(false);
         mainMenuConfirm.SetActive(false);
@@ -75,7 +71,6 @@ public class PauseMenu : MonoBehaviour
             Time.timeScale = 0f;
             pauseMenu.SetActive(true);
             bgImage_black.SetActive(true);
-            bgImage_paused.SetActive(true);
             player.GetComponent<PlayerActions_v2>().canMove = false;
 
             SoundsManager_UI.instance.Play("pause");
@@ -92,8 +87,6 @@ public class PauseMenu : MonoBehaviour
         SoundsManager_UI.instance.Play("pageback");
         
         pauseMenu.SetActive(true);
-        bgImage_paused.SetActive(true);
-        bgImage_options.SetActive(false);
         optionsMenu.SetActive(false);
         mainMenuConfirm.SetActive(false);
         quitGameConfirm.SetActive(false);
@@ -104,8 +97,6 @@ public class PauseMenu : MonoBehaviour
         SoundsManager_UI.instance.Play("pagenext");
         
         optionsMenu.SetActive(true);
-        bgImage_options.SetActive(true);
-        bgImage_paused.SetActive(false);
         pauseMenu.SetActive(false);
     }
 
