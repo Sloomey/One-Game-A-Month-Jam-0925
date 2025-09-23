@@ -26,4 +26,9 @@ public class BaseCow : MonoBehaviour
     {
         gameObject.transform.localScale = CalculateSize(widthModifier, heightModifier, lengthModifier);
     }
+
+    private void Move()
+    {
+        // 64 - Cows must wander in the area.
+    }
 }

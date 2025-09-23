@@ -66,6 +66,11 @@ public class PlayerActions_v2 : MonoBehaviour
 
     private void Update()
     {
+    }
+
+    private void Interact()
+    {
+        // to do
         // Interaction Mechanic
         /*Ray ray = cam.ScreenPointToRay(playerControls.Player.MousePosition.ReadValue<Vector2>());
         RaycastHit hit;
@@ -94,18 +99,23 @@ public class PlayerActions_v2 : MonoBehaviour
     {
         if (!viewingObject && canMove)
         {
-           // Set Player Speed
-           if (playerControls.Player.Sprint.ReadValue<float>() == 1){
+            // Set Player Speed
+            if (playerControls.Player.Sprint.ReadValue<float>() == 1)
+            {
                 // If Sprinting
                 currentSpeed = sprintSpeed;
                 cam.fieldOfView = 63f;
-            } else if (playerControls.Player.Crouch.ReadValue<float>() == 1){
+            }
+            else if (playerControls.Player.Crouch.ReadValue<float>() == 1)
+            {
                 // If Crouching
-                transform.localScale = new Vector3(1,.35f,1);
+                transform.localScale = new Vector3(1, .35f, 1);
                 currentSpeed = walkSpeed / 2;
-            } else {
+            }
+            else
+            {
                 // Normal Movement
-                transform.localScale = new Vector3(1,1,1);
+                transform.localScale = new Vector3(1, 1, 1);
                 currentSpeed = walkSpeed;
                 cam.fieldOfView = 60f;
             }
@@ -129,9 +139,9 @@ public class PlayerActions_v2 : MonoBehaviour
 
             //add force to rigidbody
             rb.AddForce(velocityChange, ForceMode.VelocityChange);
-            
+
             //PLAY FOOTSTEPS SOUNDS
-            if(rb.linearVelocity.magnitude > 0.5)
+            if (rb.linearVelocity.magnitude > 0.5)
             {
                 if (!player_steps_stone_source.isPlaying)
                 {

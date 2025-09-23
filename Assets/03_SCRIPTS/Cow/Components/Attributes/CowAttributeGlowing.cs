@@ -8,7 +8,7 @@ public class CowAttributeGlowing : MonoBehaviour
 
     public static float albinoValueModifier = 10.00f;
 
-    public Color color;
+    public Color color = new Color(1.0f, 1.0f, 1.0f);
 
     void Start()
     {
