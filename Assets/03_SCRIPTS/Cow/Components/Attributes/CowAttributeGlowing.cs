@@ -8,9 +8,12 @@ public class CowAttributeGlowing : MonoBehaviour
 
     public static float albinoValueModifier = 10.00f;
 
+    public Color color;
+
     void Start()
     {
         Light glowLight = gameObject.AddComponent<Light>();
+        glowLight.color = color;
         glowLight.intensity = 4.0f;
 
         baseCowReference = GetComponent<BaseCow>();

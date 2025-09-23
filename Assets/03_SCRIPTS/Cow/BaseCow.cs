@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BaseCow : MonoBehaviour
 {
-    public enum Gender { Male, Female }
+    public enum Gender { Male = 0, Female }
 
     [Header("Base Cow Data")]
     public string cowName;
